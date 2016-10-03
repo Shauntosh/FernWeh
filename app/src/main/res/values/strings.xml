@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">FernWeh</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="help_content">
+        1. If you want to add user then go to jdsjd\n
+        2. kjdsjdkjskjdksd ksjdksjkdjksd\n
+        
+    </string>
+
+
+    <string-array name="interests_array">
+        <item>Adventure</item>
+        <item>Family</item>
+        <item>Hangouts</item>
+        <item>Spiritual</item>
+        <item>Honeymoon</item>
+
+    </string-array>
+
+    <string-array name="NoOfDays_array">
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>4 Days</item>
+        <item>5 Days</item>
+        <item>6 Days</item>
+        <item>7 Days</item>
+        <item>7 Days+</item>
+
+    </string-array>
+
+    <string-array name="NoOfKids_array">
+        <item>1 Kid</item>
+        <item>2 Kids</item>
+        <item>3 Kids</item>
+        <item>4 Kids</item>
+        <item>5 Kids</item>
+
+        <item>5 Kids+</item>
+
+    </string-array>
+
+    <string-array name="NoOfAdults_array">
+        <item>1 Adult</item>
+        <item>2 Adults</item>
+        <item>3 Adults</item>
+        <item>4 Adults</item>
+        <item>5 Adults</item>
+
+        <item>5 Adults+</item>
+
+    </string-array>
+
+    <string-array name="budget_array">
+        <item>Economy</item>
+        <item>Platinum</item>
+        <item>Premium</item>
+        <item>Deluxe</item>
+
+
+    </string-array>
+
+
+</resources>

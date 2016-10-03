@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "25051624056",
+    "firebase_url": "https://fernweh-f0865.firebaseio.com",
+    "project_id": "fernweh-f0865",
+    "storage_bucket": "fernweh-f0865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25051624056:android:beae7db5648a89a9",
+        "android_client_info": {
+          "package_name": "com.project.ShauntoshThapa.fernweh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25051624056-9ue50ngjk7rcl96r7htj742kv8855i4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIcdlwhJsq0TfD2euZBCohBrl01vflXNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

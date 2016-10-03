@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardUseCompatPadding="true"
+    android:elevation="3dp">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_staff"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Santosh"
+            android:id="@+id/tf_destination"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tf_bungee"
+            android:textSize="20sp"
+            android:layout_below="@+id/tf_interest"
+            android:layout_toLeftOf="@+id/tf_destination"
+            android:layout_toStartOf="@+id/tf_destination" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"
+            android:id="@+id/space"
+            android:layout_below="@+id/tf_destination"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kathmandu"
+            android:id="@+id/tf_interest"
+            android:textSize="20sp"
+            android:layout_below="@+id/space"
+            android:layout_toRightOf="@+id/tf_bungee"
+            android:layout_toEndOf="@+id/tf_bungee"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:text="place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:id="@+id/textView3" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

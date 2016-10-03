@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.project.ShauntoshThapa.fernweh.UserActivity"
+    android:theme="@style/AppTheme"
+
+    >
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_interests"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/txtinterest"
+        android:layout_toRightOf="@+id/tfDestination"
+        android:entries="@array/interests_array"/>
+
+
+
+    <Button
+        android:text="Plan Trip Now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlanNow"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/cbrafting"
+        android:layout_alignStart="@+id/cbrafting"
+        android:layout_marginBottom="24dp"
+        android:elevation="0dp"
+        android:background="@color/colorPrimary"
+        android:onClick="addTrip" />
+
+
+
+    <CheckBox
+        android:text="Bungee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbbungee"
+        android:layout_alignBaseline="@+id/cbcanyoing"
+        android:layout_alignBottom="@+id/cbcanyoing"
+        android:layout_alignLeft="@+id/spinner_interests"
+        android:layout_alignStart="@+id/spinner_interests" />
+
+        <CheckBox
+            android:text="Rafting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbrafting"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+        android:text="Hiking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbhiking"
+        android:layout_below="@+id/cbrafting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="Paragliding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbparagliding"
+        android:layout_below="@+id/cbcanyoing"
+        android:layout_alignLeft="@+id/cbbungee"
+        android:layout_alignStart="@+id/cbbungee" />
+
+    <CheckBox
+        android:text="Cycling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cbparagliding"
+        android:id="@+id/cbcycling"
+        android:layout_alignBottom="@+id/cbparagliding"
+        android:layout_below="@+id/cbcanyoing" />
+
+    <CheckBox
+        android:text="Canyoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbcanyoing"
+        android:layout_below="@+id/editText5"
+        android:layout_toRightOf="@+id/cbparagliding"
+        android:layout_toEndOf="@+id/cbparagliding" />
+
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="Interests : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtinterest"
+        android:textSize="18dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/place_autocomplete_fragment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:text="Recreational Packages :"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/txtinterest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_toStartOf="@+id/cbcanyoing"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="Duration :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/tvDaysNumber"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/cbhiking"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+
+        android:id="@+id/tfNoOfTravellers"
+        android:hint="Travellers Number"
+        android:text="Travellers :"
+        android:layout_below="@+id/tvDaysNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvDaysNumber"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner_duration" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayoutDestination"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/linearlayoutDestination"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_adults"
+        android:layout_below="@+id/tfNoOfTravellers"
+        android:layout_alignRight="@+id/cbcanyoing"
+        android:layout_alignEnd="@+id/cbcanyoing" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_kids"
+        android:layout_below="@+id/tfNoOfTravellers" />
+
+    <TextView
+        android:text="Budget Class :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/tvBudget"
+        android:layout_below="@+id/spinner_adults"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_budget"
+        android:layout_alignBottom="@+id/tvBudget"
+        android:layout_alignRight="@+id/cbcycling"
+        android:layout_alignEnd="@+id/cbcycling" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Destination :  "
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="18dp"
+        android:id="@+id/tfDestination"
+
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearlayoutDestination"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvError"
+        android:layout_alignBaseline="@+id/editText5"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_toRightOf="@+id/spinner_interests"
+        android:layout_toEndOf="@+id/spinner_interests"
+        android:focusableInTouchMode="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardUseCompatPadding="true"
+    android:elevation="3dp">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_trip"
+        android:padding="16dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/space"
+            android:id="@+id/linearlayout_values"
+            android:divider="@color/colorAccent"
+            android:layout_marginStart="110dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interest"
+                android:id="@+id/tf_interest"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/tf_rafting"
+                android:layout_below="@+id/space"
+                android:layout_alignLeft="@+id/tf_kids"
+                android:layout_alignStart="@+id/tf_kids" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bungee"
+                android:id="@+id/tf_bungee"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@+id/tf_destination"
+                android:layout_toStartOf="@+id/tf_destination"
+                android:layout_below="@+id/tf_interest" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rafting"
+                android:id="@+id/tf_rafting"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_bungee"
+                android:layout_alignLeft="@+id/tf_bungee"
+                android:layout_alignStart="@+id/tf_bungee" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="canyoing"
+                android:id="@+id/tf_canyoing"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_rafting"
+                android:layout_alignLeft="@+id/tf_rafting"
+                android:layout_alignStart="@+id/tf_rafting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hiking"
+                android:id="@+id/tf_hiking"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_canyoing"
+                android:layout_alignRight="@+id/tf_bungee"
+                android:layout_alignEnd="@+id/tf_bungee" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="paragliding"
+                android:id="@+id/tf_paragliding"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_hiking"
+                android:layout_toEndOf="@+id/tf_canyoing"
+                android:layout_alignLeft="@+id/tf_budget"
+                android:layout_alignStart="@+id/tf_budget" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cycling"
+                android:id="@+id/tf_cycling"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_paragliding"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="duration"
+                android:id="@+id/tf_duration"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_cycling"
+                android:layout_toRightOf="@+id/tf_cycling"
+                android:layout_toEndOf="@+id/tf_cycling"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kids"
+                android:id="@+id/tf_kids"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_duration"
+                android:layout_alignRight="@+id/tf_bungee"
+                android:layout_alignEnd="@+id/tf_bungee"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="adults"
+                android:id="@+id/tf_adults"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/tf_kids"
+                android:layout_alignBottom="@+id/tf_kids"
+                android:layout_toRightOf="@+id/tf_duration"
+                android:layout_toEndOf="@+id/tf_duration" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="budget"
+                android:id="@+id/tf_budget"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_kids"
+                android:layout_toLeftOf="@+id/tf_adults"
+                android:layout_toStartOf="@+id/tf_adults"
+                 />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:id="@+id/tf_destination"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"
+            android:id="@+id/space"
+            android:layout_below="@+id/tf_destination"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space"
+            android:id="@+id/linearlayout_texts"
+            android:background="@color/cardview_shadow_start_color">
+
+            <TextView
+                android:text="Type:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space"
+                android:id="@+id/tvInterest"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/tvBungee"
+                android:layout_alignEnd="@+id/tvBungee" />
+
+            <TextView
+                android:text="Bungee:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tf_rafting"
+                android:layout_alignRight="@+id/tf_cycling"
+                android:layout_alignEnd="@+id/tf_cycling"
+                android:id="@+id/tvBungee"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Rafting:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tf_canyoing"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tvRafting" />
+
+            <TextView
+                android:text="Canyoing:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tf_hiking"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="20sp"
+                android:id="@+id/tvCanyoing" />
+
+            <TextView
+                android:text="Hiking:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tf_paragliding"
+                android:id="@+id/tvHiking"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/tvBudget"
+                android:textSize="20sp"
+                android:layout_alignEnd="@+id/tvBudget" />
+
+            <TextView
+                android:text="Paragliding:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvParagliding"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/tf_paragliding"
+                android:layout_alignBottom="@+id/tf_paragliding" />
+
+
+            <TextView
+                android:text="Cycling:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCycling"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/tf_cycling"
+                android:layout_alignBottom="@+id/tf_cycling" />
+
+            <TextView
+                android:text="Duration:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tf_cycling"
+                android:layout_alignEnd="@+id/tf_cycling"
+                android:id="@+id/tvDuration"
+                android:textSize="20sp"
+                android:layout_below="@+id/tf_cycling" />
+
+            <TextView
+                android:text="Kids:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignRight="@+id/tvDuration"
+                android:layout_alignEnd="@+id/tvDuration"
+                android:id="@+id/tvKids"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:text="Adults:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tf_budget"
+
+                android:id="@+id/tvAdults"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:text="Budget:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBudget"
+                android:textSize="20sp"
+
+         />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

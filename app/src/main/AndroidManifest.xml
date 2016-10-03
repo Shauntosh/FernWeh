@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.ShauntoshThapa.fernweh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".FernWeh"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FernWeh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SigninActivity"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddUserActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Registration" />
+        <activity android:name=".AddPlaceActivity" />
+        <activity android:name=".PlaceListActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="FernWeh"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HelpActivity" />
+        <activity
+            android:name=".UserActivity"
+            android:label="Plan Your Trip"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCIcdlwhJsq0TfD2euZBCohBrl01vflXNw" />
+
+        <activity android:name=".TripListActivity"
+            android:label="Previous Trips"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
