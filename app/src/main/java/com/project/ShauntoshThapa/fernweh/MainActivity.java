@@ -147,10 +147,7 @@ public class MainActivity extends AppCompatActivity
         final TextView name= (TextView) view.findViewById(R.id.name);
         TextView email= (TextView) view.findViewById(R.id.email);
 
-        if(FirebaseAuth.getInstance().getCurrentUser()!=null){
-             MenuItem item = navigationView.getMenu().findItem(R.id.nav_send);
-            item.setVisible(true);
-        }
+
 
         email.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
 
@@ -202,6 +199,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        if (id == R.id.help) {
+            startActivity(new Intent(getApplicationContext(), HelpActivity.class));
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -220,15 +221,10 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(getApplicationContext(),PlaceListActivity.class));
         } else if (id == R.id.nav_slideshow) {
-            startActivity(new Intent(getApplicationContext(),UserActivity.class));
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            startActivity(new Intent(getApplicationContext(), UserActivity.class));
         }
+
+
         else if (id == R.id.logout){
             FirebaseAuth.getInstance().signOut();
             finish();
