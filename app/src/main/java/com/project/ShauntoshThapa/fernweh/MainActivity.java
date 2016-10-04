@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(getApplicationContext(),PlaceListActivity.class));
         } else if (id == R.id.nav_slideshow) {
-            startActivity(new Intent(getApplicationContext(), UserActivity.class));
+            startActivity(new Intent(getApplicationContext(), HelpActivity.class));
         }
 
 

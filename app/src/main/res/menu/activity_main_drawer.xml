@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group android:checkableBehavior="single">
-        <item
-        android:id="@+id/nav_plantrip"
+
+            <item
+
+        android:id="@id/nav_plantrip"
         android:icon="@drawable/ic_menu_send"
-        android:title="Plan New Trip" />
+        android:title="Plan New Trip"
+                app:itemTextColor="#ffffff"
+
+            />
 
         <item
             android:id="@+id/nav_mytrip"
@@ -18,12 +24,14 @@
             android:title="Add Place" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_action_name"
             android:title="Place Details" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Help" />
+
+
     </group>
 
     <item
