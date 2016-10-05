@@ -131,7 +131,13 @@ public class SigninActivity extends AppCompatActivity {
 
 
     public void signup(View view) {
+
+
         startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+    }
+
+    public void forgotpassword(View view) {
+        startActivity(new Intent(getApplicationContext(),ForgotPasswordActivity.class));
     }
 
 }

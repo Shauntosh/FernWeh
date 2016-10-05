@@ -10,11 +10,50 @@
     tools:context="com.project.ShauntoshThapa.fernweh.HelpActivity">
 
     <TextView
+        android:text="Getting Started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvhelp1"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/help_content"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:textSize="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/tvhelp1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:text="@string/help_content1"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/tvhelp2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Trip Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvhelp2"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
 </RelativeLayout>

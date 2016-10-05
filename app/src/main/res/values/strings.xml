@@ -7,10 +7,17 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="help_content">
-        1. If you want to add user then go to jdsjd\n
-        2. kjdsjdkjskjdksd ksjdksjkdjksd\n
+    <string name="help_content">1. You have to be registered to the system in order to use it.\n\n2. You can register to the system by simply clicking the signup text below login form.\n\n3. After you are registered, you can access the system.
         
+    </string>
+
+     <string name="help_content1">
+         1. You can plan your trip by clicking on "Plan Trip Now' text below imgage slider or clicking "Plan New Trip" in the navigation bar which can be seen by tapping three horizontal lines on top right corner.\n\n2. You can also view your previous trips by tapping "My Previous Trips" on navigation bar.\n\n3. You can delete or edit your previous trips by holding tap for a while.
+
+    </string>
+
+        <string name="developers">
+         Santosh Thapa\n\nXoudeen@gmail.com\n\nSoftwarica College of IT and E-Commerce
     </string>
 
 
