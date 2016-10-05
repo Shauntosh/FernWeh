@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
     private static ViewPager mPager;
     private static int currentPage = 0;
     private static int NUM_PAGES = 0;
-    private static final Integer[] IMAGES= {R.drawable.picture1,R.drawable.picture2,R.drawable.picture3};
+    private static final Integer[] IMAGES= {R.drawable.picture7,R.drawable.picture6,R.drawable.picture5,R.drawable.picture2};
     private ArrayList<Integer> ImagesArray = new ArrayList<Integer>();
 
 
