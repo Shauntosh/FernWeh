@@ -7,7 +7,7 @@
             <item
 
         android:id="@id/nav_plantrip"
-        android:icon="@drawable/ic_menu_send"
+        android:icon="@android:drawable/ic_menu_edit"
         android:title="Plan New Trip"
                 app:itemTextColor="#ffffff"
 
@@ -15,7 +15,7 @@
 
         <item
             android:id="@+id/nav_mytrip"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@android:drawable/ic_menu_myplaces"
             android:title="My Previous Trips" />
 
         <item
@@ -28,7 +28,7 @@
             android:title="Place Details" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/ic_menu_help"
             android:title="Help" />
 
 
