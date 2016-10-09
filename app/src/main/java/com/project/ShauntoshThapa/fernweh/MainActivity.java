@@ -2,6 +2,7 @@ package com.project.ShauntoshThapa.fernweh;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
@@ -14,14 +15,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseUser;
 import com.viewpagerindicator.CirclePageIndicator;
+
+import android.widget.EditText;
 import android.widget.TextView;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -42,6 +49,7 @@ public class MainActivity extends AppCompatActivity
     private static ViewPager mPager;
     private static int currentPage = 0;
     private static int NUM_PAGES = 0;
+    EditText newPassword;
     private static final Integer[] IMAGES= {R.drawable.picture7,R.drawable.picture6,R.drawable.picture5,R.drawable.picture2};
     private ArrayList<Integer> ImagesArray = new ArrayList<Integer>();
 
@@ -113,6 +121,7 @@ public class MainActivity extends AppCompatActivity
 
         setContentView(R.layout.content_main);
         setContentView(R.layout.activity_main);
+        newPassword = (EditText) findViewById(R.id.newpassword);
         init();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -238,6 +247,9 @@ public class MainActivity extends AppCompatActivity
     else if (id==R.id.nav_mytrip){
             startActivity(new Intent(getApplicationContext(),TripListActivity.class));
     }
+        else if (id==R.id.nav_changepassword){
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -246,5 +258,22 @@ public class MainActivity extends AppCompatActivity
     }
     public void plantrip (View view) {
         startActivity(new Intent(getApplicationContext(),UserActivity.class));
+    }
+
+    public void changepassword (View view) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        user.updatePassword(newPassword.getText().toString().trim())
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(MainActivity.this, "Password is updated!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
+
+                        }
+                    }
+                });
     }
 }

@@ -52,7 +52,10 @@
             android:name=".TripListActivity"
             android:label="Previous Trips"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity"
+            android:label="Password Reset"
+            android:parentActivityName=".SigninActivity"
+            />
         <activity android:name=".AboutActivity"
             android:label="About"
             android:parentActivityName=".MainActivity" ></activity>
