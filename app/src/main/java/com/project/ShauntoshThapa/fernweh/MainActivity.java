@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity
     private static ViewPager mPager;
     private static int currentPage = 0;
     private static int NUM_PAGES = 0;
-    EditText newPassword;
     private static final Integer[] IMAGES= {R.drawable.picture7,R.drawable.picture6,R.drawable.picture5,R.drawable.picture2};
     private ArrayList<Integer> ImagesArray = new ArrayList<Integer>();
 
@@ -121,7 +120,7 @@ public class MainActivity extends AppCompatActivity
 
         setContentView(R.layout.content_main);
         setContentView(R.layout.activity_main);
-        newPassword = (EditText) findViewById(R.id.newpassword);
+
         init();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -226,11 +225,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
 
-            startActivity(new Intent(getApplicationContext(),AddPlaceActivity.class));
-        } else if (id == R.id.nav_gallery) {
-
-            startActivity(new Intent(getApplicationContext(),PlaceListActivity.class));
-        } else if (id == R.id.nav_slideshow) {
+            startActivity(new Intent(getApplicationContext(),ChangePasswordActivity.class));
+        }  else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(getApplicationContext(), HelpActivity.class));
         }
 
@@ -247,9 +243,7 @@ public class MainActivity extends AppCompatActivity
     else if (id==R.id.nav_mytrip){
             startActivity(new Intent(getApplicationContext(),TripListActivity.class));
     }
-        else if (id==R.id.nav_changepassword){
 
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -260,20 +254,5 @@ public class MainActivity extends AppCompatActivity
         startActivity(new Intent(getApplicationContext(),UserActivity.class));
     }
 
-    public void changepassword (View view) {
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-        user.updatePassword(newPassword.getText().toString().trim())
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Password is updated!", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(MainActivity.this, "Failed to update password!", Toast.LENGTH_SHORT).show();
-
-                        }
-                    }
-                });
-    }
 }

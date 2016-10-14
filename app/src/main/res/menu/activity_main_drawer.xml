@@ -18,16 +18,10 @@
             android:icon="@android:drawable/ic_menu_myplaces"
             android:title="My Previous Trips" />
 
-        <item android:title="Change password"
-            android:id="@+id/@+id/nav_changepassword" />
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Add Place" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_action_name"
-            android:title="Place Details" />
+            android:title="Change Password" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@android:drawable/ic_menu_help"
